@@ -26,5 +26,3 @@ create_symlink ~/dotfiles/kitty ~/.config/kitty
 create_symlink ~/dotfiles/tmux ~/.config/tmux
 create_symlink ~/dotfiles/nvim ~/.config/nvim
 create_symlink ~/dotfiles/starship.toml ~/.config/starship.toml
-create_symlink ~/dotfiles/sublime-merge ~/.config/sublime-merge
-create_symlink ~/dotfiles/sublime-text ~/.config/sublime-text
