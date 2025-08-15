@@ -23,6 +23,7 @@ create_symlink ~/dotfiles/btop ~/.config/btop
 create_symlink ~/dotfiles/fastfetch ~/.config/fastfetch
 create_symlink ~/dotfiles/htop ~/.config/htop
 create_symlink ~/dotfiles/kitty ~/.config/kitty
+create_symlink ~/dotfiles/tmux ~/.config/tmux
 create_symlink ~/dotfiles/nvim ~/.config/nvim
 create_symlink ~/dotfiles/starship.toml ~/.config/starship.toml
 create_symlink ~/dotfiles/sublime-merge ~/.config/sublime-merge

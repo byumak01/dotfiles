@@ -39,7 +39,7 @@ export LD_LIBRARY_PATH="/home/bymk/intel-llvm/build/lib:$LD_LIBRARY_PATH"
 
 # scripts
 # charm
-SCRIPT_DIR="/home/bymk/scripts"
+SCRIPT_DIR="${HOME}/dotfiles/scripts"
 alias bc="${SCRIPT_DIR}/charm_build.sh"
 
 # intel oneapi
