@@ -12,5 +12,6 @@ ln -sf ~/dotfiles/nvim ~/.config/nvim
 ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
 ln -sf ~/dotfiles/sublime-merge ~/.config/sublime-merge
 ln -sf ~/dotfiles/sublime-text ~/.config/sublime-text
+#ln -sf ~/dotfiles/bash_exports.sh ~/dotfiles/bash_exports.sh
 
 echo "Dotfiles symlinked successfully!"

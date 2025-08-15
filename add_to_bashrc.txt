@@ -1,0 +1,4 @@
+# Source custom environment
+if [ -f ~/dotfiles/bash_exports.sh ]; then
+    source ~/dotfiles/bash_exports.sh
+fi
