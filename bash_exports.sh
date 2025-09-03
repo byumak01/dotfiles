@@ -27,8 +27,8 @@ export HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
 export PATH="$HOMEBREW_PREFIX/bin:$PATH"
 
 # llvm18 default
-export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/llvm@${1}/lib"
-export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/llvm@${1}/include"
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/llvm@${1}/lib:$LDFLAGS"
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/llvm@${1}/include:$CPPFLAGS"
 export PATH="/home/linuxbrew/.linuxbrew/opt/llvm@${1}/bin:$PATH"
 export PATH="/home/linuxbrew/.linuxbrew/Cellar/llvm@18/18.1.8/bin:$PATH"
 export LD_LIBRARY_PATH="/home/linuxbrew/.linuxbrew/Cellar/llvm@18/18.1.8/lib:$LD_LIBRARY_PATH"
