@@ -50,4 +50,11 @@ alias setllvm="source ${SCRIPT_DIR}/llvm.sh"
 
 # acpp
 alias setacpp="source ${SCRIPT_DIR}/acpp.sh"
+
+alias recprefix="${SCRIPT_DIR}/add_prefix_to_filename_recursive.sh"
+
+alias cutter="${HOME}/cutter.AppImage"
+
+# other aliases
 alias vim=nvim
+alias gd="cd $HOME/dotfiles"
