@@ -1,0 +1,137 @@
+# ── Palette reference ─────────────────────────────────────
+# bg        = "#fafafa"
+# bg_light  = "#f0f0f0"
+# bg_sel    = "#add6ff"
+# bg_float  = "#f3f3f3"
+# fg        = "#1e1e1e"
+# fg_dim    = "#999999"
+# comment   = "#008000"
+# accent    = "#0000ff" (traditional VSCode light blue keywords)
+# string_fg = "#a31515"
+# error     = "#e51400"
+# warn      = "#bf8803"
+# info      = "#0451a5"
+# hint      = "#008000"
+
+# ── UI chrome ─────────────────────────────────────────────
+"ui.background"                = { bg = "#fafafa" }
+"ui.text"                      = { fg = "#1e1e1e" }
+"ui.text.focus"                = { fg = "#1e1e1e" }
+"ui.text.inactive"             = { fg = "#999999" }
+"ui.cursor"                    = { fg = "#fafafa", bg = "#1e1e1e" }
+"ui.cursor.primary"            = { fg = "#fafafa", bg = "#1e1e1e" }
+"ui.cursor.insert"             = { fg = "#fafafa", bg = "#1e1e1e" }
+"ui.cursor.select"             = { fg = "#fafafa", bg = "#0000ff" }
+"ui.cursor.match"              = { fg = "#1e1e1e", underline = { style = "line" } }
+"ui.cursorline.primary"        = { bg = "#f0f0f0" }
+"ui.cursorcolumn.primary"      = { bg = "#f0f0f0" }
+"ui.linenr"                    = { fg = "#999999" }
+"ui.linenr.selected"           = { fg = "#1e1e1e", modifiers = ["bold"] }
+"ui.gutter"                    = { bg = "#fafafa" }
+"ui.gutter.selected"           = { bg = "#f0f0f0" }
+"ui.selection"                 = { bg = "#add6ff" }
+"ui.selection.primary"         = { bg = "#add6ff" }
+"ui.statusline"                = { fg = "#1e1e1e", bg = "#f0f0f0" }
+"ui.statusline.inactive"       = { fg = "#999999", bg = "#f0f0f0" }
+"ui.statusline.normal"         = { fg = "#fafafa", bg = "#0451a5", modifiers = ["bold"] }
+"ui.statusline.insert"         = { fg = "#fafafa", bg = "#008000", modifiers = ["bold"] }
+"ui.statusline.select"         = { fg = "#fafafa", bg = "#af00db", modifiers = ["bold"] }
+"ui.statusline.separator"      = { fg = "#d4d4d4" }
+"ui.bufferline"                = { fg = "#999999", bg = "#f0f0f0" }
+"ui.bufferline.active"         = { fg = "#1e1e1e", bg = "#fafafa", modifiers = ["bold"] }
+"ui.bufferline.background"     = { bg = "#f0f0f0" }
+"ui.popup"                     = { fg = "#1e1e1e", bg = "#f3f3f3" }
+"ui.popup.info"                = { fg = "#1e1e1e", bg = "#f3f3f3" }
+"ui.window"                    = { fg = "#d4d4d4" }
+"ui.help"                      = { fg = "#1e1e1e", bg = "#f3f3f3" }
+"ui.menu"                      = { fg = "#1e1e1e", bg = "#f3f3f3" }
+"ui.menu.selected"             = { fg = "#1e1e1e", bg = "#add6ff" }
+"ui.menu.scroll"               = { fg = "#999999", bg = "#f3f3f3" }
+"ui.virtual.whitespace"        = { fg = "#d4d4d4" }
+"ui.virtual.indent-guide"      = { fg = "#e8e8e8" }
+"ui.virtual.inlay-hint"        = { fg = "#999999" }
+"ui.virtual.wrap"              = { fg = "#d4d4d4" }
+"ui.virtual.ruler"             = { bg = "#f0f0f0" }
+
+# ── Syntax — minimal philosophy ───────────────────────────
+"comment"                      = { fg = "#008000", modifiers = ["italic"] }
+"constant"                     = { fg = "#1e1e1e" }
+"constant.numeric"             = { fg = "#1e1e1e" }
+"constant.character"           = { fg = "#1e1e1e" }
+"constant.character.escape"    = { fg = "#a31515" }
+"constant.builtin"             = { fg = "#1e1e1e" }
+"constant.builtin.boolean"     = { fg = "#1e1e1e" }
+"string"                       = { fg = "#a31515" }
+"string.regexp"                = { fg = "#a31515" }
+"string.special"               = { fg = "#a31515" }
+
+"variable"                     = { fg = "#1e1e1e" }
+"variable.builtin"             = { fg = "#1e1e1e" }
+"variable.parameter"           = { fg = "#1e1e1e" }
+"variable.other"               = { fg = "#1e1e1e" }
+"variable.other.member"        = { fg = "#1e1e1e" }
+
+"function"                     = { fg = "#1e1e1e" }
+"function.builtin"             = { fg = "#1e1e1e" }
+"function.method"              = { fg = "#1e1e1e" }
+"function.macro"               = { fg = "#999999" }
+
+"constructor"                  = { fg = "#0000ff" }
+"type"                         = { fg = "#0000ff" }
+"type.builtin"                 = { fg = "#0000ff" }
+"type.enum"                    = { fg = "#0000ff" }
+"type.enum.variant"            = { fg = "#1e1e1e" }
+
+"keyword"                      = { fg = "#0000ff" }
+"keyword.control"              = { fg = "#0000ff" }
+"keyword.control.conditional"  = { fg = "#0000ff" }
+"keyword.control.repeat"       = { fg = "#0000ff" }
+"keyword.control.import"       = { fg = "#999999" }
+"keyword.control.return"       = { fg = "#0000ff" }
+"keyword.control.exception"    = { fg = "#0000ff" }
+"keyword.function"             = { fg = "#0000ff" }
+"keyword.operator"             = { fg = "#1e1e1e" }
+"keyword.storage"              = { fg = "#0000ff" }
+"keyword.storage.type"         = { fg = "#0000ff" }
+"keyword.storage.modifier"     = { fg = "#0000ff" }
+
+"operator"                     = { fg = "#1e1e1e" }
+"punctuation"                  = { fg = "#1e1e1e" }
+"punctuation.bracket"          = { fg = "#1e1e1e" }
+"punctuation.delimiter"        = { fg = "#1e1e1e" }
+"punctuation.special"          = { fg = "#1e1e1e" }
+
+"label"                        = { fg = "#1e1e1e" }
+"namespace"                    = { fg = "#1e1e1e" }
+"attribute"                    = { fg = "#999999" }
+"special"                      = { fg = "#1e1e1e" }
+"tag"                          = { fg = "#1e1e1e" }
+
+"markup.heading"               = { fg = "#1e1e1e", modifiers = ["bold"] }
+"markup.list"                  = { fg = "#1e1e1e" }
+"markup.bold"                  = { modifiers = ["bold"] }
+"markup.italic"                = { modifiers = ["italic"] }
+"markup.strikethrough"         = { modifiers = ["crossed_out"] }
+"markup.link.url"              = { fg = "#0000ff", underline = { style = "line" } }
+"markup.link.text"             = { fg = "#0000ff" }
+"markup.raw"                   = { fg = "#a31515" }
+
+# ── Diagnostics ───────────────────────────────────────────
+"diagnostic.error"             = { underline = { color = "#e51400", style = "curl" } }
+"diagnostic.warning"           = { underline = { color = "#bf8803", style = "curl" } }
+"diagnostic.info"              = { underline = { color = "#0451a5", style = "curl" } }
+"diagnostic.hint"              = { underline = { color = "#008000", style = "curl" } }
+"diagnostic.unnecessary"       = { modifiers = ["dim"] }
+"diagnostic.deprecated"        = { modifiers = ["crossed_out"] }
+"error"                        = { fg = "#e51400" }
+"warning"                      = { fg = "#bf8803" }
+"info"                         = { fg = "#0451a5" }
+"hint"                         = { fg = "#008000" }
+
+# ── Diff ──────────────────────────────────────────────────
+"diff.plus"                    = { fg = "#008000" }
+"diff.minus"                   = { fg = "#e51400" }
+"diff.delta"                   = { fg = "#0451a5" }
+"diff.plus.gutter"             = { fg = "#008000" }
+"diff.minus.gutter"            = { fg = "#e51400" }
+"diff.delta.gutter"            = { fg = "#0451a5" }

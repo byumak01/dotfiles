@@ -1,0 +1,125 @@
+# ── UI chrome ─────────────────────────────────────────────
+"ui.background"                = { bg = "#1e1e1e" }
+"ui.text"                      = { fg = "#d4d4d4" }
+"ui.text.focus"                = { fg = "#d4d4d4" }
+"ui.text.inactive"             = { fg = "#808080" }
+"ui.cursor"                    = { fg = "#1e1e1e", bg = "#d4d4d4" }
+"ui.cursor.primary"            = { fg = "#1e1e1e", bg = "#d4d4d4" }
+"ui.cursor.insert"             = { fg = "#1e1e1e", bg = "#d4d4d4" }
+"ui.cursor.select"             = { fg = "#1e1e1e", bg = "#569cd6" }
+"ui.cursor.match"              = { fg = "#d4d4d4", underline = { style = "line" } }
+"ui.cursorline.primary"        = { bg = "#252526" }
+"ui.cursorcolumn.primary"      = { bg = "#252526" }
+"ui.linenr"                    = { fg = "#808080" }
+"ui.linenr.selected"           = { fg = "#d4d4d4", modifiers = ["bold"] }
+"ui.gutter"                    = { bg = "#1e1e1e" }
+"ui.gutter.selected"           = { bg = "#252526" }
+"ui.selection"                 = { bg = "#264f78" }
+"ui.selection.primary"         = { bg = "#264f78" }
+"ui.statusline"                = { fg = "#d4d4d4", bg = "#252526" }
+"ui.statusline.inactive"       = { fg = "#808080", bg = "#252526" }
+"ui.statusline.normal"         = { fg = "#1e1e1e", bg = "#569cd6", modifiers = ["bold"] }
+"ui.statusline.insert"         = { fg = "#1e1e1e", bg = "#6a9955", modifiers = ["bold"] }
+"ui.statusline.select"         = { fg = "#1e1e1e", bg = "#c586c0", modifiers = ["bold"] }
+"ui.statusline.separator"      = { fg = "#333333" }
+"ui.bufferline"                = { fg = "#808080", bg = "#252526" }
+"ui.bufferline.active"         = { fg = "#d4d4d4", bg = "#1e1e1e", modifiers = ["bold"] }
+"ui.bufferline.background"     = { bg = "#252526" }
+"ui.popup"                     = { fg = "#d4d4d4", bg = "#2d2d2d" }
+"ui.popup.info"                = { fg = "#d4d4d4", bg = "#2d2d2d" }
+"ui.window"                    = { fg = "#333333" }
+"ui.help"                      = { fg = "#d4d4d4", bg = "#2d2d2d" }
+"ui.menu"                      = { fg = "#d4d4d4", bg = "#2d2d2d" }
+"ui.menu.selected"             = { fg = "#d4d4d4", bg = "#264f78" }
+"ui.menu.scroll"               = { fg = "#808080", bg = "#2d2d2d" }
+"ui.virtual.whitespace"        = { fg = "#333333" }
+"ui.virtual.indent-guide"      = { fg = "#2d2d2d" }
+"ui.virtual.inlay-hint"        = { fg = "#808080" }
+"ui.virtual.wrap"              = { fg = "#333333" }
+"ui.virtual.ruler"             = { bg = "#252526" }
+
+# ── Syntax — minimal philosophy ───────────────────────────
+# Almost everything is plain foreground. Only keywords/types
+# and comments get color.
+
+"comment"                      = { fg = "#6a9955", modifiers = ["italic"] }
+"constant"                     = { fg = "#d4d4d4" }
+"constant.numeric"             = { fg = "#d4d4d4" }
+"constant.character"           = { fg = "#d4d4d4" }
+"constant.character.escape"    = { fg = "#ce9178" }
+"constant.builtin"             = { fg = "#d4d4d4" }
+"constant.builtin.boolean"     = { fg = "#d4d4d4" }
+"string"                       = { fg = "#ce9178" }
+"string.regexp"                = { fg = "#ce9178" }
+"string.special"               = { fg = "#ce9178" }
+
+"variable"                     = { fg = "#d4d4d4" }
+"variable.builtin"             = { fg = "#d4d4d4" }
+"variable.parameter"           = { fg = "#d4d4d4" }
+"variable.other"               = { fg = "#d4d4d4" }
+"variable.other.member"        = { fg = "#d4d4d4" }
+
+"function"                     = { fg = "#d4d4d4" }
+"function.builtin"             = { fg = "#d4d4d4" }
+"function.method"              = { fg = "#d4d4d4" }
+"function.macro"               = { fg = "#808080" }
+
+"constructor"                  = { fg = "#569cd6" }
+"type"                         = { fg = "#569cd6" }
+"type.builtin"                 = { fg = "#569cd6" }
+"type.enum"                    = { fg = "#569cd6" }
+"type.enum.variant"            = { fg = "#d4d4d4" }
+
+"keyword"                      = { fg = "#569cd6" }
+"keyword.control"              = { fg = "#569cd6" }
+"keyword.control.conditional"  = { fg = "#569cd6" }
+"keyword.control.repeat"       = { fg = "#569cd6" }
+"keyword.control.import"       = { fg = "#808080" }
+"keyword.control.return"       = { fg = "#569cd6" }
+"keyword.control.exception"    = { fg = "#569cd6" }
+"keyword.function"             = { fg = "#569cd6" }
+"keyword.operator"             = { fg = "#d4d4d4" }
+"keyword.storage"              = { fg = "#569cd6" }
+"keyword.storage.type"         = { fg = "#569cd6" }
+"keyword.storage.modifier"     = { fg = "#569cd6" }
+
+"operator"                     = { fg = "#d4d4d4" }
+"punctuation"                  = { fg = "#d4d4d4" }
+"punctuation.bracket"          = { fg = "#d4d4d4" }
+"punctuation.delimiter"        = { fg = "#d4d4d4" }
+"punctuation.special"          = { fg = "#d4d4d4" }
+
+"label"                        = { fg = "#d4d4d4" }
+"namespace"                    = { fg = "#d4d4d4" }
+"attribute"                    = { fg = "#808080" }
+"special"                      = { fg = "#d4d4d4" }
+"tag"                          = { fg = "#d4d4d4" }
+
+"markup.heading"               = { fg = "#d4d4d4", modifiers = ["bold"] }
+"markup.list"                  = { fg = "#d4d4d4" }
+"markup.bold"                  = { modifiers = ["bold"] }
+"markup.italic"                = { modifiers = ["italic"] }
+"markup.strikethrough"         = { modifiers = ["crossed_out"] }
+"markup.link.url"              = { fg = "#569cd6", underline = { style = "line" } }
+"markup.link.text"             = { fg = "#569cd6" }
+"markup.raw"                   = { fg = "#ce9178" }
+
+# ── Diagnostics ───────────────────────────────────────────
+"diagnostic.error"             = { underline = { color = "#f44747", style = "curl" } }
+"diagnostic.warning"           = { underline = { color = "#cca700", style = "curl" } }
+"diagnostic.info"              = { underline = { color = "#3794ff", style = "curl" } }
+"diagnostic.hint"              = { underline = { color = "#6a9955", style = "curl" } }
+"diagnostic.unnecessary"       = { modifiers = ["dim"] }
+"diagnostic.deprecated"        = { modifiers = ["crossed_out"] }
+"error"                        = { fg = "#f44747" }
+"warning"                      = { fg = "#cca700" }
+"info"                         = { fg = "#3794ff" }
+"hint"                         = { fg = "#6a9955" }
+
+# ── Diff ──────────────────────────────────────────────────
+"diff.plus"                    = { fg = "#6a9955" }
+"diff.minus"                   = { fg = "#f44747" }
+"diff.delta"                   = { fg = "#569cd6" }
+"diff.plus.gutter"             = { fg = "#6a9955" }
+"diff.minus.gutter"            = { fg = "#f44747" }
+"diff.delta.gutter"            = { fg = "#569cd6" }
