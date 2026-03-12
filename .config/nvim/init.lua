@@ -1,11 +1,21 @@
--- Load Core Configurations
-require('_plugins')        -- Plugin manager (lazy.nvim)
-require('_lsp')            -- LSP Setup
-require('_telescope')      -- Telescope Configuration
-require('_treesitter')     -- Treesitter Configuration
-require('_nvimtree')       -- File Explorer (NvimTree)
-require('_cmp')            -- Autocompletion
-require('_settings')       -- Basic settings
-require('_keybindings')    -- Keybindings
-require('_string_replace') -- Keybindings
-require('_gitsigns') -- Keybindings
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
+if not vim.uv.fs_stat(lazypath) then
+    vim.fn.system({
+        'git', 'clone', '--filter=blob:none',
+        'https://github.com/folke/lazy.nvim.git',
+        '--branch=stable', lazypath,
+    })
+end
+vim.opt.rtp:prepend(lazypath)
+
+-- Core settings (load before plugins)
+require('core.options')
+
+-- Plugins (each file in lua/plugins/ returns a lazy.nvim spec)
+require('lazy').setup({ import = 'plugins' }, {
+    git = { url_format = "git@github.com:%s.git" },
+})
+
+-- Keymaps (load after plugins)
+require('core.keymaps')
