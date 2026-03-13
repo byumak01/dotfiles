@@ -1,5 +1,5 @@
 # ── UI chrome ─────────────────────────────────────────────
-"ui.background"                = { bg = "#262626" }
+"ui.background"                = { bg = "#1e1e1e" }
 "ui.text"                      = { fg = "#e8e8e8" }
 "ui.text.focus"                = { fg = "#e8e8e8" }
 "ui.text.inactive"             = { fg = "#999999" }
@@ -61,24 +61,24 @@
 "function.method"              = { fg = "#e8e8e8" }
 "function.macro"               = { fg = "#999999" }
 
-"constructor"                  = { fg = "#8cc8ff" }
-"type"                         = { fg = "#8cc8ff" }
-"type.builtin"                 = { fg = "#8cc8ff" }
-"type.enum"                    = { fg = "#8cc8ff" }
+"constructor"                  = { fg = "#569cd6" }
+"type"                         = { fg = "#569cd6" }
+"type.builtin"                 = { fg = "#569cd6" }
+"type.enum"                    = { fg = "#569cd6" }
 "type.enum.variant"            = { fg = "#e8e8e8" }
 
-"keyword"                      = { fg = "#8cc8ff" }
-"keyword.control"              = { fg = "#8cc8ff" }
-"keyword.control.conditional"  = { fg = "#8cc8ff" }
-"keyword.control.repeat"       = { fg = "#8cc8ff" }
+"keyword"                      = { fg = "#569cd6" }
+"keyword.control"              = { fg = "#569cd6" }
+"keyword.control.conditional"  = { fg = "#569cd6" }
+"keyword.control.repeat"       = { fg = "#569cd6" }
 "keyword.control.import"       = { fg = "#999999" }
-"keyword.control.return"       = { fg = "#8cc8ff" }
-"keyword.control.exception"    = { fg = "#8cc8ff" }
-"keyword.function"             = { fg = "#8cc8ff" }
+"keyword.control.return"       = { fg = "#569cd6" }
+"keyword.control.exception"    = { fg = "#569cd6" }
+"keyword.function"             = { fg = "#569cd6" }
 "keyword.operator"             = { fg = "#e8e8e8" }
-"keyword.storage"              = { fg = "#8cc8ff" }
-"keyword.storage.type"         = { fg = "#8cc8ff" }
-"keyword.storage.modifier"     = { fg = "#8cc8ff" }
+"keyword.storage"              = { fg = "#569cd6" }
+"keyword.storage.type"         = { fg = "#569cd6" }
+"keyword.storage.modifier"     = { fg = "#569cd6" }
 
 "operator"                     = { fg = "#e8e8e8" }
 "punctuation"                  = { fg = "#e8e8e8" }
@@ -97,8 +97,8 @@
 "markup.bold"                  = { modifiers = ["bold"] }
 "markup.italic"                = { modifiers = ["italic"] }
 "markup.strikethrough"         = { modifiers = ["crossed_out"] }
-"markup.link.url"              = { fg = "#8cc8ff", underline = { style = "line" } }
-"markup.link.text"             = { fg = "#8cc8ff" }
+"markup.link.url"              = { fg = "#569cd6", underline = { style = "line" } }
+"markup.link.text"             = { fg = "#569cd6" }
 "markup.raw"                   = { fg = "#deb08a" }
 
 # ── Diagnostics ───────────────────────────────────────────
@@ -116,7 +116,7 @@
 # ── Diff ──────────────────────────────────────────────────
 "diff.plus"                    = { fg = "#7ec07e" }
 "diff.minus"                   = { fg = "#f55858" }
-"diff.delta"                   = { fg = "#8cc8ff" }
+"diff.delta"                   = { fg = "#569cd6" }
 "diff.plus.gutter"             = { fg = "#7ec07e" }
 "diff.minus.gutter"            = { fg = "#f55858" }
-"diff.delta.gutter"            = { fg = "#8cc8ff" }
+"diff.delta.gutter"            = { fg = "#569cd6" }
