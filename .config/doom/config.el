@@ -24,9 +24,10 @@
 ;;(setq doom-font (font-spec :family "Fira Code" :size 12 :weight 'semi-light)
 ;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 ;;
-(setq doom-font (font-spec :family "Iosevka Nerd Font" :size 28 :weight 'light)
-      doom-big-font (font-spec :family "Iosevka Nerd Font" :size 34 :weight 'light)
-      doom-variable-pitch-font (font-spec :family "Iosevka Nerd Font" :size 28))
+(setq doom-font (font-spec :family "Iosevka Nerd Font" :size 30 :weight 'light)
+      doom-big-font (font-spec :family "Iosevka Nerd Font" :size 36 :weight 'light)
+      doom-variable-pitch-font (font-spec :family "Iosevka Nerd Font" :size 30)
+      doom-symbol-font (font-spec :family "Symbols Nerd Font Mono"))
 
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
@@ -77,6 +78,13 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+;; Theme
+(setq doom-theme 'minimal)
+
+;; Start maximized
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; Customized keybinds in insert mode
 (map! :i "C-h" #'backward-char
