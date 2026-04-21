@@ -24,9 +24,9 @@
 ;;(setq doom-font (font-spec :family "Fira Code" :size 12 :weight 'semi-light)
 ;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 ;;
-(setq doom-font (font-spec :family "Iosevka Nerd Font" :size 30 :weight 'light)
-      doom-big-font (font-spec :family "Iosevka Nerd Font" :size 36 :weight 'light)
-      doom-variable-pitch-font (font-spec :family "Iosevka Nerd Font" :size 30)
+(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 30 :weight 'light)
+      doom-big-font (font-spec :family "JetBrainsMono Nerd Font" :size 36 :weight 'light)
+      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font" :size 30)
       doom-symbol-font (font-spec :family "Symbols Nerd Font Mono"))
 
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
@@ -37,7 +37,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+;;(setq doom-theme 'doom-dark+)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -93,3 +93,9 @@
       :i "C-l" #'forward-char
       :i "C-a" #'beginning-of-line
       :i "C-e" #'end-of-line)
+
+;; Invalidates projectile cache after branch switch etc. otherwise projectile
+;; does not update the cache automatically and cannot find non-indexed files
+;; in other branches
+(after! magit
+  (add-hook 'magit-post-refresh-hook #'projectile-invalidate-cache))
