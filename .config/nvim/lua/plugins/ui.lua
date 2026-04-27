@@ -17,7 +17,53 @@ return {
     {
         'nvim-lualine/lualine.nvim',
         config = function()
+            local colors = {
+                bg = '#282c34',
+                bg_alt = '#23272f',
+                bg_active = '#384150',
+                fg = '#e5e9f0',
+                fg_dim = '#c0c8d4',
+                fg_muted = '#9aa6b8',
+            }
+            local minimal_theme = {
+                normal = {
+                    a = { fg = colors.fg, bg = colors.bg_active, gui = 'bold' },
+                    b = { fg = colors.fg_dim, bg = colors.bg_alt },
+                    c = { fg = colors.fg, bg = colors.bg },
+                },
+                insert = {
+                    a = { fg = colors.fg, bg = colors.bg_active, gui = 'bold' },
+                    b = { fg = colors.fg_dim, bg = colors.bg_alt },
+                    c = { fg = colors.fg, bg = colors.bg },
+                },
+                visual = {
+                    a = { fg = colors.fg, bg = colors.bg_active, gui = 'bold' },
+                    b = { fg = colors.fg_dim, bg = colors.bg_alt },
+                    c = { fg = colors.fg, bg = colors.bg },
+                },
+                replace = {
+                    a = { fg = colors.fg, bg = colors.bg_active, gui = 'bold' },
+                    b = { fg = colors.fg_dim, bg = colors.bg_alt },
+                    c = { fg = colors.fg, bg = colors.bg },
+                },
+                command = {
+                    a = { fg = colors.fg, bg = colors.bg_active, gui = 'bold' },
+                    b = { fg = colors.fg_dim, bg = colors.bg_alt },
+                    c = { fg = colors.fg, bg = colors.bg },
+                },
+                inactive = {
+                    a = { fg = colors.fg_muted, bg = colors.bg_alt },
+                    b = { fg = colors.fg_muted, bg = colors.bg_alt },
+                    c = { fg = colors.fg_muted, bg = colors.bg },
+                },
+            }
+
             require('lualine').setup {
+                options = {
+                    theme = minimal_theme,
+                    component_separators = '',
+                    section_separators = '',
+                },
                 sections = {
                     lualine_a = { 'mode' },
                     lualine_b = { 'branch', 'diff', 'diagnostics' },
@@ -35,7 +81,7 @@ return {
                                 return table.concat(names, ',')
                             end,
                             icon = '',
-                            color = { fg = '#98be65' },
+                            color = { fg = colors.fg_dim },
                         },
                         {
                             function() return vim.fn.fnamemodify(vim.fn.getcwd(), ':t') end,
