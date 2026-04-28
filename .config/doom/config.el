@@ -79,6 +79,9 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+;; Dired
+(setq dired-listing-switches "-alh")
+
 ;; Theme
 (setq doom-theme 'minimal)
 
