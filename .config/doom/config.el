@@ -81,6 +81,7 @@
 
 ;; Dired
 (setq dired-listing-switches "-alh")
+(remove-hook 'dired-mode-hook #'dired-omit-mode)
 
 ;; Theme
 (setq doom-theme 'minimal)
